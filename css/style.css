@@ -355,7 +355,7 @@
     text-align: center;
 }
 
-.main__img-card{
+.main__img--card{
     margin: 10px;
     height: 500px;
     width: 500px;
@@ -366,3 +366,4 @@
     color: #fff;
     background-image: linear-gradient( to right, #00dbde 0%, #fc00ff 100%); 
 }
+
