@@ -19,7 +19,7 @@ const highlightMenu = () => {
     const aboutMenu = document.querySelector('#about-page');
     const servicesMenu = document.querySelector('#services-page');
     let scrollPos = window.scrollY;
-    //console.log(scrollPos);
+    
 
     //adds highlights class to menu items
 
@@ -50,5 +50,5 @@ window.addEventListener('click',highlightMenu);
 //close mobile menu when closing on menu item
  const hideMobileMenu = () => {
      const menuBars = document.querySelector('.is-active');
-     if(width.innerWidth <= 768 menuBars)
+     if(width.innerWidth <= 768 menuBars);
  }
