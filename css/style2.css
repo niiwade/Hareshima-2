@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #32316f;
+    --yellow: rgb(247, 223, 14);
+    --light-blue: #2e5bff;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgb(243, 235, 235);
+}
+
+img {
+    /*width: 100%; */
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    width: 100%;
+    padding: 10rem 0;
+}
+
+
+/* HEADER SECTION */
+
+header {
+    width: 100%;
+    padding: 2.5rem 0;
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 0 5rem 5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+}
+
+.nav-ul li {
+    list-style: none;
+    padding: 0 5px;
+    margin: 10px 19px;
+}
+
+.nav-ul li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.cta {
+    display: none;
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
+    border: 3px solid var(--white);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    transition: all 0.3s;
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--white);
+    border: 3px solid var(--light-blue);
+    color: var(--blue);
+}
+
+
+/* INSIDE */
+
+.inside {
+    text-align: center;
+    color: var(--white);
+    padding-top: 10rem;
+}
+
+.inside h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 1rem;
+}
+
+.inside p {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.inside img {
+    transform: translateY(12rem);
+}
+
+.shape {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(92, 36, 36, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate ease 10s infinite alternate;
+}
+
+.shape1 {
+    left: 1rem;
+    top: 10%;
+    background: #ffa41c;
+}
+
+.shape2 {
+    width: 10rem;
+    height: 10rem;
+    left: 25rem;
+    top: 50%;
+    background: #F2994A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.shape3 {
+    width: 30rem;
+    height: 30rem;
+    right: -05rem;
+    top: -5%;
+    background: #D1913C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD194, #D1913C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD194, #D1913C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-2rem);
+    }
+    25% {
+        transform: translateX(-2rem);
+    }
+    50% {
+        transform: translateX(2rem);
+    }
+    75% {
+        transform: translateX(2rem);
+    }
+    100% {
+        transform: translateX(2rem);
+    }
+}
+
+
+/* Service */
+
+#services {
+    margin: 5rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading p {
+    color: #181818;
+}
+
+.heading2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 2rem 0;
+    color: var(--color-dark-grey);
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 4rem;
+    padding-top: 5rem;
+}
+
+.service {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5rem 2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.service:hover {
+    transform: translate(-2rem);
+    border-top: 1px solid var(--light-blue);
+}
+
+.service>* {
+    padding-bottom: 1.5rem;
+}
+
+.service i {
+    font-size: 2.3rem;
+    color: var(--light-blue);
+}
+
+.heading-3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-dark-grey);
+}
+
+.text-small {
+    font-size: 1.4rem;
+    color: var(--color-dark-grey);
+}
+
+.service a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--yellow);
+    position: relative;
+    transition: all .3s;
+}
+
+.service a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 1rem;
+    width: 100%;
+    height: 2px;
+    background: #BA8B02;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #181818, #BA8B02);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #181818, #BA8B02);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* MEDIA QUERIES 600PX & BELOW */
+
+@media screen and (max-width: 600px) {
+    .header img {
+        margin-bottom: 5px;
+    }
+    .cta-btn {
+        display: none;
+    }
+    .cta {
+        display: block;
+    }
+    nav {
+        display: block;
+        text-align: center;
+    }
+    .nav-ul {
+        justify-content: center;
+        padding: 5px 0;
+        margin: 0 auto;
+    }
+}
