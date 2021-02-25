@@ -289,6 +289,62 @@ nav {
 }
 
 
+/* Downlad */
+
+#profile {
+    background-color: #181818;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(35rem, 1fr));
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.profile h2 {
+    color: rgb(255, 163, 24);
+}
+
+.pro-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 1rem;
+    color: rgb(255, 163, 24);
+}
+
+.pro-item i {
+    font-size: 3rem;
+    color: rgb(90, 204, 51);
+    margin: 1rem;
+}
+
+.pro-item p {
+    font-size: 1.8rem;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+.main__img--card {
+    margin: 30px;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 163, 24);
+}
+
+.fa-download {
+    font-size: 3em;
+    text-align: center;
+}
+
+
 /* MEDIA QUERIES 600PX & BELOW */
 
 @media screen and (max-width: 600px) {
