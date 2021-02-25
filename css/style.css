@@ -324,24 +324,51 @@ nav {
     font-size: 1.8rem;
 }
 
-.main__img--container {
-    text-align: center;
+.pro-image {
+    transform: translateX(9rem);
 }
 
-.main__img--card {
-    margin: 30px;
-    height: 20px;
-    width: 20px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(255, 163, 24);
+#download {
+    margin-top: 3rem;
+    background-color: #BA8B02;
 }
 
-.fa-download {
-    font-size: 3em;
-    text-align: center;
+.btn-square1 {
+    background-color: var(--yellow);
+    border-radius: 3px;
+}
+
+
+/*footer*/
+
+footer {
+    padding: 1rem 0;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 4rem;
+    padding-top: 2rem;
+}
+
+.footer-links ul li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.footer-links ul li a {
+    font-size: 1.4rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-credit a {
+    color: var(--white);
 }
 
 
